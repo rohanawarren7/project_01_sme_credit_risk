@@ -191,7 +191,13 @@ if page == "📊 EDA Explorer" and data_loaded:
         with col1:
             st.subheader("Transaction Amounts")
             sample = transactions.sample(min(10000, len(transactions)))
-            st.hist_chart(sample[sample['amount'] > 0]['amount'], bins=50)
+            import matplotlib.pyplot as plt
+            fig, ax = plt.subplots()
+            ax.hist(sample[sample['amount'] > 0]['amount'], bins=50, color='steelblue', edgecolor='white')
+            ax.set_xlabel('Amount (£)')
+            ax.set_ylabel('Frequency')
+            ax.set_title('Inflow Distribution')
+            st.pyplot(fig)
         
         with col2:
             st.subheader("Default Rate by Industry")
