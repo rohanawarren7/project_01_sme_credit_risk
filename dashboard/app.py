@@ -5,7 +5,8 @@ Interactive portfolio piece for hiring managers.
 """
 
 import sys
-sys.path.insert(0, '/Users/Rohan/Documents/Data/project_01_sme_credit_risk')
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import streamlit as st
 import pandas as pd
