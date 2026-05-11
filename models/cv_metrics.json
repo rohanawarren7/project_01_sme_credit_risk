@@ -1,0 +1,14 @@
+{
+  "xgboost": {
+    "roc_auc_mean": NaN,
+    "roc_auc_std": NaN,
+    "ks_mean": NaN,
+    "brier_mean": NaN
+  },
+  "logistic": {
+    "roc_auc_mean": NaN,
+    "roc_auc_std": NaN,
+    "ks_mean": NaN,
+    "brier_mean": NaN
+  }
+}

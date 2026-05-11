@@ -1,0 +1,19 @@
+{
+  "overall_accuracy": 0.5658914728682171,
+  "coverage": 0.3953488372093023,
+  "volume_coverage": 0.9597123378053258,
+  "method_accuracy": {
+    "fuzzy": {
+      "accuracy": 0.7352941176470589,
+      "count": 68
+    },
+    "manual": {
+      "accuracy": 0.4166666666666667,
+      "count": 48
+    },
+    "unknown": {
+      "accuracy": 0.23076923076923078,
+      "count": 13
+    }
+  }
+}
